@@ -134,12 +134,28 @@ body {
     color: var(--black);
     font-weight: 500;
     transition: var(--transition);
+    position: relative;
 }
 
 .nav-menu a:hover,
 .nav-menu a.active {
     color: var(--black);
     font-weight: 700;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--black);
+    transition: var(--transition);
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
 }
 
 .social-links {
@@ -221,12 +237,12 @@ body {
     transition: var(--transition);
 }
 
-.nav-arrow:hover {
+.nav-arrow:hover:not(:disabled) {
     background: var(--black);
     transform: scale(1.1);
 }
 
-.nav-arrow:hover svg {
+.nav-arrow:hover:not(:disabled) svg {
     fill: var(--white);
 }
 
@@ -290,6 +306,27 @@ section {
     margin-bottom: 40px;
     color: var(--black);
     font-weight: 800;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--black);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+    font-weight: 500;
 }
 
 /* Overview Section */
@@ -311,12 +348,23 @@ section {
     border-radius: 12px;
     border: 2px solid var(--black);
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: var(--transition);
+}
+
+.content-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .content-box p {
     font-size: 1.05rem;
     line-height: 1.7;
     color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.content-box p:last-child {
+    margin-bottom: 0;
 }
 
 .concept-grid {
@@ -351,10 +399,16 @@ section {
     margin: 0;
 }
 
+.concept-item p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 5px;
+}
+
 /* Projects Section */
 .projects-categories {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
     margin-top: 40px;
 }
@@ -366,7 +420,8 @@ section {
     border: 2px solid var(--black);
     text-align: center;
     transition: var(--transition);
-    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-category:hover {
@@ -382,6 +437,7 @@ section {
 
 .project-category p {
     color: var(--text-light);
+    font-size: 1rem;
 }
 
 /* Founder Section - Compact */
@@ -400,6 +456,12 @@ section {
     border: 2px solid var(--black);
     max-width: 800px;
     margin: 0 auto;
+    transition: var(--transition);
+}
+
+.founder-content.compact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
 .founder-image-container.compact {
@@ -434,8 +496,12 @@ section {
     color: var(--text-dark);
 }
 
+.investment-partner-section {
+    padding-top: 20px;
+}
+
 /* Business Opportunities - Compact */
-.sponsorship-section.compact-opportunities {
+.sponsorship-section.compact {
     padding: 40px 0;
 }
 
@@ -498,13 +564,6 @@ section {
     align-items: center;
     justify-content: center;
     font-size: 0.8rem;
-}
-
-.sponsor-note {
-    font-size: 0.9rem;
-    font-style: italic;
-    color: var(--text-light);
-    margin-top: 15px;
 }
 
 .strategic-partnership.compact {
@@ -751,5 +810,9 @@ section {
     .nav-arrow {
         width: 45px;
         height: 45px;
+    }
+
+    .logo-watermark img {
+        width: 50px;
     }
 }
