@@ -6,10 +6,24 @@ let currentPageIndex = 0;
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    hamburger.classList.toggle('active');
-});
+if (hamburger) {
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+        
+        // Animate hamburger
+        const spans = hamburger.querySelectorAll('span');
+        if (hamburger.classList.contains('active')) {
+            spans[0].style.transform = 'rotate(45deg) translateY(8px)';
+            spans[1].style.opacity = '0';
+            spans[2].style.transform = 'rotate(-45deg) translateY(-8px)';
+        } else {
+            spans[0].style.transform = 'none';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'none';
+        }
+    });
+}
 
 // Page Navigation System
 function showPage(pageId, direction = 'right') {
@@ -71,8 +85,16 @@ function showPage(pageId, direction = 'right') {
     updateNavigationArrows();
     
     // Close mobile menu
-    navMenu.classList.remove('active');
-    hamburger.classList.remove('active');
+    if (navMenu) {
+        navMenu.classList.remove('active');
+    }
+    if (hamburger) {
+        hamburger.classList.remove('active');
+        const spans = hamburger.querySelectorAll('span');
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+    }
     
     // Scroll to top
     window.scrollTo(0, 0);
@@ -220,19 +242,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-
-// Hamburger menu animation
-if (hamburger) {
-    hamburger.addEventListener('click', () => {
-        const spans = hamburger.querySelectorAll('span');
-        if (hamburger.classList.contains('active')) {
-            spans[0].style.transform = 'rotate(45deg) translateY(8px)';
-            spans[1].style.opacity = '0';
-            spans[2].style.transform = 'rotate(-45deg) translateY(-8px)';
-        } else {
-            spans[0].style.transform = 'none';
-            spans[1].style.opacity = '1';
-            spans[2].style.transform = 'none';
-        }
-    });
-}
