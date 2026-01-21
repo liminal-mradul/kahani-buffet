@@ -5,7 +5,7 @@
 }
 
 :root {
-    --yellow-bg: #FFD700;
+    --yellow-bg: #FAB922;
     --white: #FFFFFF;
     --black: #000000;
     --text-dark: #1a1a1a;
@@ -282,7 +282,7 @@ body {
 
 .home-video {
     margin: 40px auto;
-    max-width: 700px;
+    max-width: 600px;
     border-radius: 15px;
     overflow: hidden;
     border: 4px solid var(--black);
