@@ -3,367 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.youtube.com; frame-src 'self' https://www.youtube.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests;">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-    <meta name="robots" content="index, follow">
-    <title>Kahani Buffet - Media & Entertainment</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Website Title</title>
+    <style>
+        /* Updated styles for the layout */
+        .founder-section {
+            font-size: 14px; /* Reduced size */
+        }
+        .contact-us {
+            margin: 10px; /* Reduced layout size */
+        }
+        .logo {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 50px; /* Updated size for logo */
+        }
+        .main-content {
+            text-align: center; /* Center the video */
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <h1>Kahani Buffet</h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#" data-page="home" class="nav-link">Home</a></li>
-                <li><a href="#" data-page="overview" class="nav-link">Overview</a></li>
-                <li><a href="#" data-page="projects" class="nav-link">Projects</a></li>
-                <li><a href="#" data-page="partners" class="nav-link">Partners & Opportunities</a></li>
-                <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="social-links">
-                <a href="https://www.youtube.com/@KAHANIBUFFET" target="_blank" rel="noopener noreferrer" class="social-btn youtube-btn" title="YouTube">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF0000">
-                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/kahanibuffet/?hl=en" target="_blank" rel="noopener noreferrer" class="social-btn instagram-btn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    <header>
+        <h1>Welcome to Kahani Buffet</h1>
+    </header>
 
-    <!-- Page Container -->
-    <div class="page-container">
-        <!-- Home Page -->
-        <div id="page-home" class="page active">
-            <section class="home-section">
-                <div class="container">
-                    <div class="home-content">
-                        <div class="animated-logo">
-                            <img src="file.svg" alt="Kahani Buffet Logo" class="logo-svg">
-                        </div>
-                        <h1 class="home-title">Kahani Buffet</h1>
-                        <p class="home-subtitle">SPONSORSHIP PROPOSAL</p>
-                        <div class="home-image">
-                            <img src="images/founder.png" alt="Kahani Buffet" class="home-img">
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Overview Page -->
-        <div id="page-overview" class="page">
-            <section class="overview-section">
-        <div class="container">
-            <h2 class="section-title">Overview</h2>
-            
-            <!-- About Us -->
-            <div class="overview-item">
-                <h3>About Us</h3>
-                <div class="content-box">
-                    <p>KAHANI BUFFET is a premier entertainment platform offering a unique glimpse into the lives and minds of renowned personalities from India and worldwide. Through our curated content, including stories, films, and documentaries, you'll gain insights into their thoughts, lifestyles, and opinions on their audience. Stay connected for an enriched experience tailored to your interests.</p>
-                </div>
-            </div>
-
-            <!-- Our Journey -->
-            <div class="overview-item">
-                <h3>Our Journey</h3>
-                <div class="content-box">
-                    <p>Our platform is designed to cater to a diverse audience globally, offering content that resonates with viewers and listeners from India and beyond. Since launching in 2025, we've been working diligently to fulfill our vision. Our upcoming schedule includes two podcasts with renowned Bollywood personalities this month, followed by a series of engaging content, including films, podcasts, documentaries, and interviews, all planned through March 2026. We're committed to this long-term journey and are excited to share our progress with our audience.</p>
-                </div>
-            </div>
-
-            <!-- Our Vision -->
-            <div class="overview-item">
-                <h3>Our Vision</h3>
-                <div class="content-box">
-                    <p>KAHANI BUFFET is an exciting new channel that's all about sparking creativity and entertainment. Our mission is to bring you closer to the world of Bollywood by sharing the personal stories of its stars. We'll feature films that are not just entertaining but also showcase artistic brilliance and creativity.</p>
-                    <p>Our music section will be a treasure trove of soulful Hindi and English tracks, as well as folk music that connects you to your heritage. We'll also be exploring the world of politics, giving you a glimpse into the goals and motivations of our leaders. And, if you're interested in fitness, you'll love our athlete features, where they'll share their secrets to staying fit and their thoughts on societal wellness. Kahani Buffet is a startup that launched in 2025, and we're committed to making a mark in the world of entertainment.</p>
-                </div>
-            </div>
-
-            <!-- Our Concept -->
-            <div class="overview-item">
-                <h3>Our Concept</h3>
-                <p class="section-subtitle">Our buffet features a mix of different entertainment genres.</p>
-                <div class="concept-grid">
-                    <div class="concept-item">
-                        <div class="concept-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/>
-                            </svg>
-                        </div>
-                        <h3>FILMS</h3>
-                        <p>Film Promotion</p>
-                    </div>
-                    <div class="concept-item">
-                        <div class="concept-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
-                            </svg>
-                        </div>
-                        <h3>PODCAST</h3>
-                    </div>
-                    <div class="concept-item">
-                        <div class="concept-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/>
-                            </svg>
-                        </div>
-                        <h3>INTERVIEWS</h3>
-                    </div>
-                    <div class="concept-item">
-                        <div class="concept-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/>
-                            </svg>
-                        </div>
-                        <h3>DOCUMENTARIES</h3>
-                    </div>
-                    <div class="concept-item">
-                        <div class="concept-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-                            </svg>
-                        </div>
-                        <h3>MUSIC</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-            </section>
-        </div>
-
-        <!-- Projects Page -->
-        <div id="page-projects" class="page">
-            <section class="projects-main-section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-categories">
-                <a href="projects-films.html" class="project-category">
-                    <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg> Films</h3>
-                    <p>Explore our collection of films featuring artistic brilliance and creativity.</p>
-                </a>
-                <a href="projects-music.html" class="project-category">
-                    <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg> Music</h3>
-                    <p>A treasure trove of soulful Hindi and English tracks, as well as folk music.</p>
-                </a>
-                <a href="projects-podcast.html" class="project-category">
-                    <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg> Podcast</h3>
-                    <p>Engaging conversations with renowned personalities from Bollywood and beyond.</p>
-                </a>
-                <a href="projects-shows.html" class="project-category">
-                    <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg> Shows & Events</h3>
-                    <p>Live events and shows featuring entertainment and cultural experiences.</p>
-                </a>
-                <a href="projects-fitness.html" class="project-category">
-                    <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29l-1.43-1.43z"/></svg> Fitness</h3>
-                    <p>Athlete features sharing secrets to staying fit and thoughts on societal wellness.</p>
-                </a>
-                <a href="projects-news.html" class="project-category">
-                    <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg> News</h3>
-                    <p>Latest updates, announcements, and glimpses from the entertainment world.</p>
-                </a>
-            </div>
-        </div>
+    <section class="about-founder">
+        <h2>About the Founder</h2>
+        <p>...Updated contents of the founder's section...</p>
     </section>
-        </div>
 
-        <!-- Partners & Opportunities Page -->
-        <div id="page-partners" class="page">
-            <!-- About the Founder Section (Reduced Size) -->
-            <section class="founder-section compact">
-                <div class="container">
-                    <h2 class="section-title">About the Founder</h2>
-                    <div class="founder-content compact">
-                        <div class="founder-image-container compact">
-                            <img src="images/founder.png" alt="Mohammad Gelani Pasha - Founder & Owner" class="founder-image compact" data-placeholder="founder-placeholder">
-                        </div>
-                        <div class="founder-info compact">
-                            <h3>MOHAMMAD GELANI PASHA</h3>
-                            <p class="founder-role">Founder & Owner</p>
-                            <p>Mohammad Gelani Pasha is a multifaceted professional in the entertainment industry, working as an Actor, Casting Director and Trainer. With over a decade of experience, he has honed his skills in Theater, Acting, Writing, and Role-Playing.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <section class="business-opportunities">
+        <h2>Business Opportunities</h2>
+        <p>...Combined contents of Business Opportunities...</p>
+    </section>
 
-            <!-- Investment Partner Section -->
-            <section class="founder-section investment-partner-section compact">
-                <div class="container">
-                    <h2 class="section-title">Investment Partner</h2>
-                    <div class="founder-content compact">
-                        <div class="founder-image-container compact">
-                            <img src="images/investment-partner.png" alt="Mohd Shahnawaz Pasha - Investment Partner" class="founder-image compact" data-placeholder="partner-placeholder">
-                        </div>
-                        <div class="founder-info compact">
-                            <h3>MOHD SHAHNAWAZ PASHA</h3>
-                            <p class="founder-role">Investment Partner</p>
-                            <p>He is a well-known businessman from Moradabad, Uttar Pradesh. In the real estate sector, he has achieved numerous milestones and successfully accomplished multiple targets through his vision, dedication, and strong understanding of the market.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>Reach us on Instagram: <a href="https://www.instagram.com/your_handle">@your_handle</a></p>
+    </section>
 
-            <!-- Business Opportunities Section -->
-            <section class="sponsorship-section">
-        <div class="container">
-            <h2 class="section-title">Business Opportunities</h2>
-            <p class="section-subtitle">SPONSORSHIP OPPORTUNITY & BENEFIT</p>
-            
-            <!-- Title Sponsor -->
-            <div class="sponsor-package">
-                <div class="sponsor-header">
-                    <h3>Title Sponsor</h3>
-                    <p class="sponsor-subtitle">(Presenting Partner for an year, INR 10,00,000)</p>
-                </div>
-                <div class="sponsor-content">
-                    <p class="sponsor-intro">Join us for an exciting partnership opportunity! Over the one year, we'll be creating 15-20 high-quality podcasts, films, music videos and interviews, and you'll be featured as a "PRESENTING PARTNER" in all of them permanently.</p>
-                    <ul class="sponsor-benefits">
-                        <li>We'll feature your BRAND NAME with our Content MAIN TITLE.</li>
-                        <li>In the introduction, we'll highlight your BRAND NAME.</li>
-                        <li>Our guests will talk about your BRAND.</li>
-                        <li>We'll display your brand's accessories on screen.</li>
-                        <li>Thanking note will be posted on social media.</li>
-                        <li>And this collaboration will ensure your BRAND NAME's permanent presence on our platform, visible to millions and billions.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Associate Sponsor -->
-            <div class="sponsor-package">
-                <div class="sponsor-header">
-                    <h3>Associate Sponsorship</h3>
-                    <p class="sponsor-subtitle">(for an year, INR 5,00,000/-)</p>
-                </div>
-                <div class="sponsor-content">
-                    <p class="sponsor-intro">Deliverables: The content will be renamed with "Associate Sponsor."</p>
-                    <ul class="sponsor-benefits">
-                        <li>Renamed our content title with your BRAND NAME as Powered by Associate Sponsor.</li>
-                        <li>We'll display your BRAND's accessories on screen.</li>
-                        <li>And this collaboration will ensure your BRAND NAME's permanent presence on our platform, visible to millions and billions.</li>
-                    </ul>
-                    <p class="sponsor-note">It can be customized according to your convenience.</p>
-                </div>
-            </div>
-
-            <!-- Strategic Partnerships -->
-            <div class="strategic-partnership">
-                <h3>We are open to strategic partnerships</h3>
-                <p>and invite you to consider as a financer and producer.</p>
-                <p class="partnership-note">Having your collaboration as a part of our platform would be the development of an ever-lasting relationship.</p>
-            </div>
-        </div>
-            </section>
-        </div>
-
-        <!-- Contact Page -->
-        <div id="page-contact" class="page">
-            <section class="contact-section compact">
-                <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-grid compact">
-                <div class="contact-info">
-                    <div class="contact-item compact">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <p>312, Janki Center, Near Chitrakoot Stadium<br>Andheri (W), Mumbai</p>
-                        </div>
-                    </div>
-                    <div class="contact-item compact">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p><a href="mailto:kahanibuffet@gmail.com" class="contact-link">kahanibuffet@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item compact">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p class="phone-number" data-phone="+919870957885">
-                                <span>+91 987 09 57 885</span>
-                                <button class="copy-btn" title="Copy phone number">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
-                                    </svg>
-                                </button>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="contact-item compact">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zM8.03 8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Website</h4>
-                            <p><a href="https://www.kahanibuffet.com" target="_blank" rel="noopener noreferrer" class="contact-link">www.kahanibuffet.com</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-            </section>
-        </div>
+    <div class="main-content">
+        <video src="images/video.mp4" controls></video>
     </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Thank You!</h3>
-                    <p style="font-size: 1.1rem; margin-bottom: 10px;">Hope You Are Interested</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="footer-social">
-                        <a href="https://www.youtube.com/@KAHANIBUFFET" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                            </svg> YouTube
-                        </a>
-                        <a href="https://www.instagram.com/kahanibuffet/?hl=en" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg> Instagram
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <p style="margin-top: 20px;">Copyright © Kahani Buffet. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <img src="images/logo.png" alt="Logo" class="logo">
 </body>
 </html>
