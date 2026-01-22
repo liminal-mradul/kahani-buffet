@@ -319,18 +319,14 @@ body:has(#page-home.active) .logo-watermark {
     z-index: 0;
 }
 
-.home-video-element {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: contain;
+.home-video iframe {
     position: relative;
     z-index: 1;
 }
 
 .home-logo-display {
     flex-shrink: 0;
-    width: 280px;
+    width: 350px;
     height: auto;
 }
 
@@ -830,7 +826,7 @@ section {
     }
 
     .home-logo-display {
-        width: 200px;
+        width: 250px;
     }
 
     .section-title {
@@ -873,7 +869,7 @@ section {
     }
 
     .home-logo-display {
-        width: 160px;
+        width: 200px;
     }
 
     .section-title {
