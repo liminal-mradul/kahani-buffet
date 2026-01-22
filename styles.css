@@ -22,13 +22,14 @@ body {
     min-height: 100vh;
 }
 
-/* Logo Watermark - Hidden on Home Page */
+/* Logo Watermark - Hidden on Home Page, shown on other pages */
 .logo-watermark {
     position: fixed;
     top: 80px;
     right: 20px;
     z-index: 999;
     opacity: 0.9;
+    transition: var(--transition);
 }
 
 .logo-watermark img {
@@ -37,7 +38,8 @@ body {
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
-#page-home .logo-watermark {
+/* Hide watermark only when home page is active */
+body:has(#page-home.active) .logo-watermark {
     display: none;
 }
 
@@ -272,6 +274,14 @@ body {
     margin: 0 auto;
     position: relative;
     z-index: 2;
+}
+
+.home-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--black);
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .home-media-container {
@@ -806,6 +816,10 @@ section {
         display: flex;
     }
 
+    .home-title {
+        font-size: 2.2rem;
+    }
+
     .home-media-container {
         flex-direction: column;
         gap: 30px;
@@ -850,6 +864,10 @@ section {
 }
 
 @media (max-width: 480px) {
+    .home-title {
+        font-size: 1.8rem;
+    }
+
     .home-video {
         max-width: 95%;
     }
